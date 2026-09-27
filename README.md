@@ -55,8 +55,7 @@ Checks the sitemap as a document rather than as a list of pages, all from data c
 Files over Google's 50,000-URL or 50 MB limits, and empty sitemap files
 Invalid lastmod — Google ignores a date it can't parse, so a wrong format silently throws away the signal. Dates in the future are flagged separately
 http:// URLs in an https:// sitemap
-Duplicate URLs appearing in more than one sitemap file
-# fragments, which Google drops, collapsing several entries onto one page
+Duplicate URLs appearing in more than one sitemap file fragments, which Google drops, collapsing several entries onto one page
 Tracking parameters (utm_*, gclid, fbclid and friends), which usually create duplicates of the clean URL
 Cross-host URLs and mixed-case paths
 7. Checks status (fast, opt-in)
