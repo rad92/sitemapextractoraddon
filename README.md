@@ -179,8 +179,12 @@ ________________________________________________________________________________
 # Client report (PDF)
 PDF report opens a printable report in a new tab; Chrome's print dialog saves it as a PDF. There's a field for the client name and your own, which appear on the cover.
 Extensions can't write a PDF directly, and bundling a PDF library would mean rebuilding layout, pagination and font handling. Printing a properly styled page is both simpler and better output: Chrome's own renderer handles pagination, text stays selectable and searchable, and the result is vector rather than a bitmap.
+
 It contains everything the tool found. Every finding lists the URLs it applies to rather than just a count. Every URL appears in full, grouped under the sitemap file it came from, each with its search preview, metadata, heading outline, structured data, queries and any problems. Search Console is reproduced in full — totals, CTR benchmarks by position, every page with data, every query, cannibalisation — and robots.txt is included as served.
+
 A Detail control in the toolbar switches between the full version and summary only, without regenerating. On a large site the full version runs to hundreds of printed pages, so the popup estimates the length before you open it.
+
 The report leads with the findings a client should care about, in plain language — sitemap URLs that don't resolve, pages blocked by robots.txt, noindex pages in the sitemap, orphans earning impressions, pages ranking well but rarely clicked. Then the site-structure diagram, a pages to fix first table ordered by impressions so the work is ranked by what it costs rather than by page order, and a section per check.
+
 # Open in a tab
 The ⧉ button top-right reopens the extension as a full browser tab. Chrome destroys popups the moment they lose focus, which cancels a long run — a tab survives, uses the whole window, and is the right way to audit a large site.
