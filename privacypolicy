@@ -1,0 +1,80 @@
+# Privacy Policy — Sitemap Extractor
+
+**Last updated: 25 September 2026**
+
+## Summary
+
+Sitemap Extractor does not collect, transmit, sell or share your data. Everything the
+extension does happens inside your own browser. There is no analytics, no telemetry, no
+advertising, no tracking, and no server operated by us that your data passes through.
+
+## What the extension accesses
+
+**Websites you audit.** When you enter a domain and press Extract, the extension requests
+that site's `robots.txt`, its sitemap files, and — only if you choose the optional passes —
+its pages. These requests go directly from your browser to that website, exactly as if you
+had visited it. Requests are made without cookies, so pages are fetched as an anonymous
+visitor sees them.
+
+**The address of your current tab.** The extension reads the address of the tab you are on
+to pre-fill the domain box, so you do not have to type it. It does not read page content,
+and it does not record where you browse.
+
+**Google Search Console data (optional).** If you connect Search Console, the extension
+requests performance data for the property you select, using read-only access. That data is
+sent from Google to your browser and used to annotate the results on screen. It is not
+transmitted anywhere else. You can disconnect at any time using Sign out.
+
+## What is stored, and where
+
+All storage is local to your browser, using Chrome's extension storage:
+
+- **A local count of URL inspections used today**, so the extension can warn you before you
+  exhaust Google's daily quota. This is a number, not a list of URLs.
+- **Report data**, written when you press "PDF report" so the report page can display it.
+  It is overwritten each time you generate a report.
+
+Nothing is written to any remote server. Uninstalling the extension removes all of it.
+
+## What is never done
+
+- No data is sent to the developer or to any third party.
+- No analytics or crash reporting of any kind.
+- No selling, renting or sharing of data.
+- No use of your data for advertising, or for training any model.
+- No collection of personally identifiable information.
+- No remote code: the extension ships all of its code in the package and downloads none.
+
+## Permissions, and why each is needed
+
+| Permission | Why |
+|---|---|
+| `host_permissions: <all_urls>` | To fetch sitemaps, robots.txt and pages from whatever site you choose to audit. Chrome cannot express "any site the user types in" more narrowly, which is why this appears as "read your data on all websites". |
+| `activeTab`, `tabs` | To read the current tab's address to pre-fill the domain box, and to open the report in a new tab. |
+| `downloads` | To save the CSV, Excel, JSON and SVG files you export. |
+| `identity` | To let you sign in to Google Search Console, if you choose to use that feature. Optional and unused otherwise. |
+| `storage`, `unlimitedStorage` | To hold the report data locally while the report page displays it. A full audit of a large site exceeds the default quota, which is why the unlimited variant is requested. |
+
+## Google user data
+
+If you connect Search Console, the extension uses the
+`https://www.googleapis.com/auth/webmasters.readonly` scope. This is read-only: the
+extension cannot change anything in your Search Console account.
+
+Use of information received from Google APIs adheres to the
+[Google API Services User Data Policy](https://developers.google.com/terms/api-services-user-data-policy),
+including the Limited Use requirements. Specifically, Search Console data is used only to
+display the audit results to you in the extension, is never transferred to anyone else,
+is never used for advertising, and is never read by a human.
+
+## Children
+
+The extension is a professional tool and is not directed at children.
+
+## Changes
+
+Any change to this policy will be published at this address with an updated date.
+
+## Contact
+
+houston12@gmail.com
